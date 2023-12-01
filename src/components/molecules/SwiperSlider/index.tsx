@@ -1,6 +1,5 @@
 import React from "react";
 
-import { Film } from "../../../types";
 import { Navigation } from "swiper/modules";
 import { Swiper } from "swiper/react";
 import "swiper/css";
