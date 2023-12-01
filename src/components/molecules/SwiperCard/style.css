@@ -1,0 +1,118 @@
+.entity-mask {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-bottom: 8px;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.entity-mask:hover .entity-details .decal-contain .decal:before,
+.entity-mask:hover .entity-details .decal-contain .decal:after {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  box-shadow: 0 0 6px 1px white;
+}
+
+.entity-link {
+  background-color: #5a5c5d;
+  min-height: 252px;
+  border-radius: 8px 8px 0 0;
+}
+
+.entity-mask a img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.entity-details {
+  background-color: #1d1e1f;
+  padding: 32px 12px 12px;
+  height: 100%;
+  position: relative;
+}
+
+.entity-details .decal-contain {
+  display: block;
+  top: unset;
+  left: unset;
+  position: relative;
+  bottom: 16px;
+  width: 32px;
+}
+
+.entity-details .decal-contain .decal:before {
+  width: 24px;
+  position: absolute;
+  content: "";
+  border-radius: 2px;
+  border-top: 2px solid #5a5c5d;
+  border-bottom: 2px solid #5a5c5d;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.entity-details .decal-contain .decal:after {
+  left: 28px;
+  position: absolute;
+  width: 4px;
+  content: "";
+  border-radius: 2px;
+  border-top: 2px solid #5a5c5d;
+  border-bottom: 2px solid #5a5c5d;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.entity-details h3 {
+  transition: color 200ms;
+  color: #f8f8f8;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.entity-details h3::after,
+.entity-details h3::before {
+  content: unset;
+}
+
+.entity-details .notch-contain {
+  background-color: transparent;
+  position: absolute;
+  bottom: -14px;
+  height: 14px;
+  left: 0;
+  width: 100%;
+  display: block;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.entity-details .notch-contain:before {
+  left: 0;
+  border-right: 14px solid transparent;
+  width: 70%;
+}
+
+.entity-details .notch-contain:before,
+.entity-details .notch-contain:after {
+  display: block;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  top: auto;
+  border-top: 14px solid #1d1e1f;
+  z-index: -2;
+  box-sizing: border-box;
+}
+
+.entity-details .notch-contain:after {
+  right: 0;
+  border-left: 14px solid transparent;
+  width: 10%;
+}
+

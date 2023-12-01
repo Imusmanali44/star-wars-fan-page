@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: transparent;
+  font-size: 1em;
+  line-height: 1.2;
+  background-image: url("https://lumiere-a.akamaihd.net/v1/images/background-stars-desktop_v2_96b6d74a.jpeg?region=0%2C0%2C2048%2C1600");
+  color: #b5b7b7;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a.active {
+  color: #f8f8f8;
+}
+
+p{
+  font-size: clamp(.8rem, 2vw, 1rem);
+}
+
+img {
+  border: 0;
+  vertical-align: bottom;
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
+.container {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .d-lg-none {
+    display: none;
+  }
+
+  .d-lg-block {
+    display: block;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.visibility-visible {
+  visibility: visible;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.section {
+  padding: 16px 0;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 40px 0;
+  }
+}
+
+.not-found{
+  margin: 2rem 1rem;
+}
+
+
+/* slider css */
+.swiper-wrap.swiper {
+  padding: 24px 0;
+}
+
+.swiper-wrap .swiper-button-prev,
+.swiper-wrap .swiper-button-next {
+  background-color: white;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  color: #1d1e1f;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 20px !important;
+  font-weight: 600;
+}

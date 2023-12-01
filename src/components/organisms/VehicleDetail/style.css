@@ -1,0 +1,38 @@
+.film-item{
+  gap: 4rem;
+}
+
+.poster {
+  max-width: 477px;
+  width: 100%;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+  background-color: #5a5c5d;
+  border-radius: 8px;
+}
+
+.poster img {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  min-height: 450px;
+}
+.item-title {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 48px;
+  color: white;
+  order: 1;
+}
+
+.meta-info {
+  margin-top: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.meta-title {
+  margin-bottom: 4px;
+  gap: 1rem;
+}
+
+.meta-label {
+  font-weight: 700;
+}

@@ -1,0 +1,93 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 21%;
+  margin-bottom: 24px;
+}
+
+.card-container:hover .card-content-wrapper .card-decal .decal:before,
+.card-container:hover .card-content-wrapper .card-decal .decal:after {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  box-shadow: 0 0 6px 1px white;
+}
+
+.card-link-img {
+  display: block;
+  background-color: #5a5c5d;
+  /* min-height: 298px; */
+  border-radius: 8px;
+}
+
+.card-link-img img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 300px;
+    object-fit: cover;
+}
+
+.card-content-wrapper {
+  padding: 16px 0 0;
+}
+
+.card-content-wrapper .card-decal {
+  padding-bottom: 16px;
+}
+
+.card-content-wrapper .card-decal {
+  display: block;
+  top: unset;
+  left: unset;
+  position: relative;
+  /* bottom: 16px; */
+  width: 32px;
+}
+
+.card-content-wrapper .card-decal .decal:before {
+  width: 24px;
+  position: absolute;
+  content: "";
+  border-radius: 2px;
+  border-top: 2px solid #5a5c5d;
+  border-bottom: 2px solid #5a5c5d;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.card-content-wrapper .card-decal .decal:after {
+  left: 28px;
+  position: absolute;
+  width: 4px;
+  content: "";
+  border-radius: 2px;
+  border-top: 2px solid #5a5c5d;
+  border-bottom: 2px solid #5a5c5d;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.card-content-wrapper .card-title {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #fff;
+  text-shadow: none;
+  line-height: 1.15em;
+}
+
+
+
+@media (max-width: 1024px) {
+  .card-container{
+    width: 100%;
+    min-width: 30%;
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-container{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
